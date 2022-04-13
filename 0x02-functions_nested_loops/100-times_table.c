@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_times_table - prints the times table of the input,
+ * print_times_table - Prints the time table of the input,
  * starting with 0.
  * @n: the value of the times table to be printed.
  */
@@ -9,7 +9,7 @@ void print_times_table(int n)
 {
 	int num, mult, prod;
 
-	if (n >= 0 && n <= 15)
+	if (n>= 0 && n <= 15)
 	{
 		for (num = 0; num <= n; num++)
 		{
@@ -25,13 +25,13 @@ void print_times_table(int n)
 				if (prod <= 99)
 					putchar(' ');
 				if (prod <= 9)
-					putchar(' ');	
+					putchar(' ');
 				if (prod >= 100)
 				{
 					putchar((prod / 100) + '0');
 					putchar(((prod / 10)) % 10 + '0');
 				}
-				else if (prod <= 99 && prod >= 10)
+				else if (prod <= 99 && prod >=10)
 				{
 					putchar((prod / 10) + '0');
 				}
