@@ -14,7 +14,7 @@ char *infinte_add(char *n1, char *n2, char *r, int size_r)
 {
 	int add = 0, len1, len2, i, j;
 
-	for (len1 = 0; n1[len1]; len++)
+	for (len1 = 0; n1[len1]; len1++)
 		;
 	for (len2 = 0; n2[len2]; len2++)
 		;
