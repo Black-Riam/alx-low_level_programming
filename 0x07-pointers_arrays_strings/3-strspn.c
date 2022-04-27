@@ -2,10 +2,10 @@
 
 /**
  * _strspn - Locates a character in a string
- * @s; This is the main C string to be scanned.
+ * @s: This is the main C string to be scanned.
  * @accept: This is the string containing the list of characters to match in s
  * Return: return count
- * */
+ */
 
 unsigned int _strspn(char *s, char *accept)
 
@@ -18,27 +18,27 @@ unsigned int _strspn(char *s, char *accept)
 	str2 = accept;
 
 	i = 0;
-	while (str1[i] != '\0') /*Declaring WHILE *s */
+	while (str1[i] != '\0')
 	{
 		j = 0;
-		while (str2[j] != '\0') /*Declaring WHILE *accept */
+		while (str2[j] != '\0')
 		{
-			if (str2[j] == str1[i]) /*Evaluate condition*/
+			if (str2[j] == str1[i])
 			{
-				count++; /*count number*/
+				count++;
 				break;
 			}
 
-			j++;   /*add j+1*/
+			j++;
 		}
 
-		if (s[i] != accept[j]) /*If aren't equals*/
+		if (s[i] != accept[j])
 		{
 			break;
 		}
 
-		i++; /*add x + 1*/
+		i++;
 	}
 
-	return (count); /* return value of count*/
+	return (count);
 }
