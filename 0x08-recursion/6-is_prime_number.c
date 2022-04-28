@@ -22,7 +22,7 @@ int evaluate_num(int num, int iterator)
 
 	if (num % iterator != 0)
 	{
-		return(evaluate_num (num, iterator + 1));
+		return (evaluate_num(num, iterator + 1));
 	}
 
 	return (0);
