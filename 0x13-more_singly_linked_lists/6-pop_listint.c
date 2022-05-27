@@ -20,4 +20,5 @@ int pop_listint(listint_t **head)
 	free(*head);
 	*head = temp;
 
-	return }
+	return (num)
+}
