@@ -1,1 +1,3 @@
-my readme for bit manipulations
+# About
+
+Working with Bit manipulation
